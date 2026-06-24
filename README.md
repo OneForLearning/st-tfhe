@@ -1,11 +1,12 @@
-# Projet-DPEG v0.6.0 — PSI-ExactMatch (bibliothèques, sans transport)
+# Projet-DPEG v1.0.0 — PSI-ExactMatch (bibliothèques, sans transport)
 
 PSI ExactMatch (Depth-0) entre hôpitaux sous chiffrement homomorphe de Paillier
 2048 bits. Cette version expose **uniquement le code** : la logique
 cryptographique est répartie en bibliothèques séparées, **sans aucune couche
-réseau** (ni TCP, ni mTLS). Le transport est laissé au développeur backend.
+réseau** (ni TCP, ni mTLS).
 
-Le module FHEnymisation a été retiré.
+Le module FHEnymisation a été retiré (et sera développer dans un autre module).
+Le code du demo n'intervient pas en production, donc peut être ignorer lors de l'intégration dans le système
 
 ## Séparation des crates
 
