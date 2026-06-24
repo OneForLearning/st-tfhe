@@ -1,0 +1,20 @@
+[package]
+name    = "dpeg_server"
+version = { workspace = true }
+edition = { workspace = true }
+
+# Bibliothèque de calculs homomorphes Depth-0. Aucun transport :
+# le backend enveloppe ces fonctions dans son propre service.
+[lib]
+name = "dpeg_server"
+path = "src/lib.rs"
+
+[dependencies]
+dpeg_shared = { path = "../shared" }
+num-bigint  = { workspace = true }
+num-traits  = { workspace = true }
+num-integer = { workspace = true }
+rand        = { workspace = true }
+rand_core   = { workspace = true }
+serde       = { workspace = true }
+rug         = { workspace = true }

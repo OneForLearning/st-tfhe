@@ -1,0 +1,24 @@
+[package]
+name    = "dpeg_shared"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+name = "dpeg_shared"
+path = "src/lib.rs"
+
+[dependencies]
+num-bigint  = { workspace = true }
+num-traits  = { workspace = true }
+num-integer = { workspace = true }
+rand        = { workspace = true }
+rand_core   = { workspace = true }
+serde       = { workspace = true }
+serde_json  = { workspace = true }
+bincode     = { workspace = true }
+zeroize     = { workspace = true }
+sha2        = { workspace = true }
+csv         = { workspace = true }
+rug         = { workspace = true }
+rayon       = { workspace = true }
+unicode-normalization = { workspace = true }

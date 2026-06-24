@@ -1,0 +1,5 @@
+# dpeg.toml — informatif. En MVP, les options passent par la CLI :
+#   serveur : --listen 0.0.0.0:9000 --beta 1.0
+#   nœud    : --initiate|--join --server <addr> --peer|--listen <addr> --csv <f>
+key_bits = 2048
+beta     = 1

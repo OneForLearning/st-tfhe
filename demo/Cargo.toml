@@ -1,0 +1,16 @@
+[package]
+name    = "dpeg_demo"
+version = { workspace = true }
+edition = { workspace = true }
+
+# Harnais de démonstration / test d'intégration EN MÉMOIRE (sans réseau).
+# Seul ce crate dépend à la fois de node et de server.
+[[bin]]
+name = "dpeg_demo"
+path = "src/main.rs"
+
+[dependencies]
+dpeg_shared = { path = "../shared" }
+dpeg_node   = { path = "../node" }
+dpeg_server = { path = "../server" }
+num-bigint  = { workspace = true }
